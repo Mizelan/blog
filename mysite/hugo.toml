@@ -1,0 +1,50 @@
+baseURL = 'http://mizelan.github.io/'
+languageCode = 'ko-kr'
+title = 'Mizelan blog'
+theme = 'hugo-coder'
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "posts/"
+#  [[menu.main]]
+#    name = "About"
+#    weight = 2
+#    url = "about/"
+#  [[menu.main]]
+#    name = "Projects"
+#    weight = 3
+#    url = "projects/"
+
+[params]
+    author = "Mizelan"
+    # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
+    description = "Mizelan's personal website"
+    keywords = "blog,developer,personal"
+
+  # 홈페이지에 포스트 목록 표시
+  mainSections = ["posts"]
+
+   # 홈페이지 설정
+  homeSections = ["posts"]
+  homeLayout = "list"
+
+  # 포스트 정렬 방식 (기본값: 날짜)
+  orderSections = "date"
+  # 정렬 순서 (기본값: 내림차순)
+  orderSectionsReverse = false
+  # 페이지당 포스트 수
+  paginate = 10
+
+  # 날짜 형식 설정
+  dateFormat = "2006-01-02"
+  
+  # 포스트 목록에 설명 표시
+  listDescription = true
+  
+  # 포스트 목록에 태그 표시
+  showTags = true
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
